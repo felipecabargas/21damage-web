@@ -24,10 +24,10 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="damage21">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="apple-touch-icon" href="/21damage-web/icons/Icon-192.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="icon" type="image/png" href="/21damage-web/favicon.png"/>
 
   <title>damage21</title>
   <link rel="manifest" href="/21damage-web/manifest.json">
@@ -45,8 +45,8 @@
       }
       scriptLoaded = true;
       var scriptTag = document.createElement('script');
-      scriptTag.src = 'main.dart.js';
-      scriptTag.type = 'application/javascript';
+      scriptTag.src = '/21damage-web/main.dart.js';
+      scriptTag.type = '/21damage-web/application/javascript';
       document.body.append(scriptTag);
     }
 
@@ -56,7 +56,7 @@
         // Wait for registration to finish before dropping the <script> tag.
         // Otherwise, the browser will load the script multiple times,
         // potentially different versions.
-        var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
+        var serviceWorkerUrl = '/21damage-web/flutter_service_worker.js?v=' + serviceWorkerVersion;
         navigator.serviceWorker.register(serviceWorkerUrl)
           .then((reg) => {
             function waitForActivation(serviceWorker) {
